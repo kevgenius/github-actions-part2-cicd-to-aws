@@ -9,7 +9,7 @@ name: CICD-Pipeline-apps-to-AWS-ELastic-Beanstalk-from-GitHubActions
 env:
   ELB_PACKAGE_S3_BUCKET_NAME : "yevgenykorban-flask-app-packages"
   ELB_APP_NAME               : "MyFlask"
-  EB_ENVIRONMENT_NAME        : "myflask-env"  
+  ELB_ENVIRONMENT_NAME       : "myflask-env"  
   DEPLOY_PACKAGE_NAME        : "flask_app_${{ github.sha }}.zip"
   AWS_REGION_NAME            : "us-west-2"
 
