@@ -39,7 +39,7 @@ jobs:
     - name: Copy Deployment package to S3 Bucket
       run:  aws s3 cp ${{ env.DEPLOY_PACKAGE_NAME }} s3://${{ env.ELB_PACKAGE_S3_BUCKET_NAME }}
 
-    - name: Print success message for CI finish
+    - name: Print success message for CI Pipeline finish
       run : echo "CI Pipeline part finished successfully!"
 
       
